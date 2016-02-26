@@ -2,8 +2,8 @@ import gevent.subprocess as sp
 import gevent
 from gevent.pool import Pool
 import sys
-# from .. import ensure_dir
-from os.path import dirname, join, exists
+
+from os.path import dirname
 import collections
 
 class logger(object):
