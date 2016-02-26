@@ -1,3 +1,5 @@
+from setuptools import setup, find_packages
+
 PACKAGE = "utils"
 NAME = "utils"
 DESCRIPTION = "utils files for python"
@@ -12,6 +14,7 @@ setup(
     description=DESCRIPTION,
     author=AUTHOR,
     author_email=AUTHOR_EMAIL,
-    license="BSD",
     url=URL,
+    packages=find_packages(exclude=["tests.*", "tests"]),
 )
+
